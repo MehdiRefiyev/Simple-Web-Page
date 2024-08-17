@@ -1,0 +1,380 @@
+@font-face {
+    font-family: MyFontRegular;
+    src: url(../Fonts/ClashDisplay-Regular.ttf); /*Font Family*/
+}
+@font-face {
+    font-family: MyFontLight;
+    src: url(../Fonts/ClashDisplay-Light.ttf); 
+}
+@font-face {
+    font-family: MyFontMedium;
+    src: url(../Fonts/ClashDisplay-Semibold.ttf); 
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #EFEFEF;
+}
+header{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+main{
+    width: 96%;
+    height: fit-content;
+    margin: 0px 2%;
+}
+.logo_area{
+    width: 150px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    text-decoration: none;
+    color: #000000;
+    font-family: MyFontRegular;
+    font-size: larger;
+    font-weight: 500;
+}
+.main_nav{
+    min-width:324px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.main_nav ul {
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.main_nav ul li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #000000;
+    font-family: MyFontRegular;
+}
+/*main section*/
+/*hero section*/
+.main_txt , .txt_info{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    margin-bottom: 50px;
+}
+.content_fixer{ /*for not repeat css*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+.brand_div{
+    width: 70%;
+    height: 100%;
+}
+.brand_div h1{
+    margin: 0%;
+    font-family: MyFontLight;
+    font-size: 130px;
+}
+.brand_div h2{
+    margin: 0%;
+    font-family: MyFontLight;
+    font-size: 130px;
+}
+.brand_info{
+    width: 30%;
+    height: 100%;
+    font-size: 18px;
+    font-family: MyFontRegular;
+    font-weight: bold;
+}
+.brand_info p {
+    max-width: 242px;
+    margin:50px auto;
+}
+.txt_info{
+    height: fit-content;
+    margin-bottom: 0;
+}
+.textdiv{
+    max-width: 655px;
+    margin-right: auto;
+    justify-content: center;
+}
+.nav_info{
+    width: 20%;
+    justify-content: flex-start;
+    align-items: center;
+}
+.textdiv h1{
+    font-size: 32px;
+    margin-top: 0%;
+    font-family:MyFontLight;
+}
+.btn_drop{
+    width: fit-content;
+    padding: 10px 10px 10px 15px;
+    padding-left: 12px;
+    display: flex;
+    flex-wrap: nowrap;
+    border-radius: 22px;
+    border: none;
+    background-color: #000000;
+    font-family: MyFontRegular;
+    color: #EFEFEF;
+    align-items: center;
+}
+.btn_drop::after{
+    width: 12px;
+    height: 12px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    content: url(/assets/Icons/icons8-dot-12.png);
+}
+.margin_top{
+    margin-top: 20px;
+}
+.div_label{
+    width: 140px;
+    font-family: MyFontRegular;
+    color: #828282;
+    padding-bottom: 15px;
+    border-bottom: 1px solid silver;
+}
+.nav_info nav{
+    width: 140px;
+    min-height: 115px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.nav_info nav ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+}
+.nav_info nav ul li a{
+    text-decoration: none;
+    font-family:MyFontMedium;
+    color: #000000;
+}
+/*help section*/
+#help_section{
+    padding: 150px 0px;
+}
+#help_section .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+#help_section .container .row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .row .col-4{
+    width: calc(100%/12*4);
+}
+#help_section .container h1{
+    font-size: 2rem;
+    font-family: MyFontRegular;
+    margin-bottom: 20px;
+}
+.row .col-4 .card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 12px 25px;
+    border-left: 1px solid gray;
+}
+.col-4 .card span{
+    color: #828282;
+    font-family:MyFontMedium;
+    font-size: 3rem;
+    margin-bottom: 35px;
+}
+.col-4 .card h2{
+    font-family:MyFontRegular;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+.col-4 .card p{
+    font-family:MyFontRegular;
+    font-size: 1.2rem;
+}
+/*wokr section*/
+#work_section{
+    padding: 70px 0px;
+}
+#work_section .work_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.work_container .work_header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.work_container .work_header h1{
+    font-size: 2rem;
+    font-family:MyFontRegular ;
+}
+.work_container .work_header p{
+    font-size: 1.4rem;
+    font-family:MyFontMedium;
+}
+.work_list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.work_list .row-1{
+    width: 100%;
+}
+.work_list .row-1 .card{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+    border-top: 1px solid grey;
+}
+.row-1 .card .list_name{
+    width: 40%;
+}
+.card .list_name h1{
+    font-family: MyFontMedium;
+    font-size: 4rem;
+}
+.card .list_name p{
+    font-family: MyFontRegular;
+    font-size: 1.2rem;
+}
+.card span{
+    font-family: MyFontMedium;
+    font-size: 2rem;
+}
+/*process section*/
+#process_section{
+    padding: 20px 0px 100px 0px;
+}
+#process_section .process_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between
+}
+.process_container .process_info{
+    max-width: 435px;
+}
+.process_container .process_info h1{
+    font-family: MyFontMedium;
+    font-size: 2rem;
+}
+.process_container .process_info p{
+    margin-top: 10px;
+    font-family: MyFontRegular;
+    font-size: 1.2rem;
+}
+.process_container .list_process{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.list_process .list_card{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+    border-bottom: 1px solid grey;
+}
+.list_card .list_header{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.list_header span{
+    font-family: MyFontMedium;
+    font-size: 24px;
+    margin-right: 25px;
+}
+.list_header p{
+    font-family: MyFontMedium;
+    font-size: 20px;
+    margin-right: 25px;
+    margin-right: auto;
+}
+.list_header button{
+    border: none;
+    background-color: transparent;
+    font-family: MyFontRegular;
+    font-size: 20px;
+}
+.list_header .plus{font-size: 28px;}
+.list_card .list_add_info {
+    width: 95%;
+    margin-right: auto;
+    margin-top: 20px;
+}
+/*Cta section*/
+#Cta_section{
+    padding: 50px 0px 50px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+#Cta_section .content_fixer h1{
+    max-width: 625px;
+    font-size: 4.5rem;
+    font-family: MyFontMedium;
+}
+/*footer*/
+footer{
+    width: 96%;
+    height: fit-content;
+    margin: 0px 2%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.message_p{
+    width: fit-content;
+}
+footer .message_p p {
+    font-size: 18px;
+    font-family: MyFontRegular;
+}
+footer nav{
+    width: 40%;
+}
+footer nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+footer nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-family: MyFontMedium;
+}
